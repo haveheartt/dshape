@@ -22,6 +22,13 @@
                     <div class="container px-3 my-3">
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
 
+                            {{-- Data da Medição --}}
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="dataMed" type="date" placeholder="Data da medição" data-sb-validations="required" />
+                                <label for="dataMed">Data da medição</label>
+                                <div class="invalid-feedback" data-sb-feedback="dataMed:required">Data da medição é obrigatório.</div>
+                            </div>
+
                             {{-- Peso  --}}
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="pesoKg" type="text" placeholder="Peso(Kg)" data-sb-validations="required" />

@@ -1,5 +1,8 @@
-<?php
 
+<?php
+//a maioria das migrations a gente tem um metodo up de criação, down de destruicao!!
+//vantagens: nao se preocupa com sql a principio !!
+//eh tudo abstraido a parte de conexao do banco, eh literalmente só muda o nome do bd na .env
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
